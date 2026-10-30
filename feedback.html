@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+  <title>Feedback - KID's LEARNING PORTAL</title>
+  <link rel="stylesheet" href= "style.css">
+  <style>
+    .body {
+        font-family: Arial, sans-serif;
+        background-color: #045820;
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    .header {
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header {
+        font-size: 28px;
+        font-weight: bold;
+        color: #4CAF50;
+    }
+
+    .header h1 {
+        margin: 0;
+        padding: 10px;
+        color: #266928;
+    }
+
+    .feedback-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #01fc05;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(3, 101, 23, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        color: #01fc12;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #0cf44a;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #4CAF50;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Give your feedback</h1>
+    </div>
+
+    <div class="feedback-container">
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" placeholder="Enter your name">
+            </div> 
+            <div class="form-group">
+                <label for="fsubject">Subject</label>
+                <select id="fsubject">
+                    <option value="math">Math</option>
+                    <option value="english">Science</option>
+                    <option value="science">English</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fmessage">feedback</label>
+                <textarea id="fmessage" rows="4" placeholder="Enter your feedback..."required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit feedback</button>
+        </form>
+        <p id="foutput" class="output"></p>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+  </html>
+ 
